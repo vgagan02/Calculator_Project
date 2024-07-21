@@ -15,6 +15,9 @@ function Main(){
                 changeInput('Error')
             }
         }
+        else if(arg==='DEL'){
+            changeInput(input.slice(0,-1));
+        }
         else{
             changeInput(input+arg);
         }
@@ -40,7 +43,8 @@ function Main(){
             <button className="gridelement15 element" onClick={()=>{clickEvent('/')}}>÷</button>
             <button className="gridelement16 element" onClick={()=>{clickEvent('(')}}>(</button>
             <button className="gridelement17 element" onClick={()=>{clickEvent(')')}}>)</button>
-            <button className="gridelement18 element" onClick={()=>{clickEvent(')')}}>0</button>
+            <button className="gridelement18 element" onClick={()=>{clickEvent('0')}}>0</button>
+            <button className="gridelement19 element" onClick={()=>{clickEvent('DEL')}}>DEL</button>
         </div>
     );
 }
