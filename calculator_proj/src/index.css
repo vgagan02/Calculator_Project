@@ -132,6 +132,7 @@ html,body{
     text-align: center;
     background-color: rgb(176, 176, 176);
     transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
 }
 .element:hover{
     background-color: rgb(209, 252, 240);
