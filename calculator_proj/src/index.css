@@ -48,14 +48,27 @@ html,body{
     margin-right: 20px;
 }
 
+.calculatorContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 .mainbody{
     display: grid;
     grid-template-rows: 100px 100px 100px 100px 100px 100px;
     grid-template-columns: 100px 100px 100px 100px;
-    margin: 10px;
-    margin-top: 50px;
+    background-color: rgb(53, 53, 53);
     justify-content: center;
     text-align: center;
+    padding: 5px;
+    width: 420px;
+    box-sizing: border-box;
+    height: auto;
+    border-radius: 1rem;
 }
 
 .gridelement0{
@@ -74,10 +87,6 @@ html,body{
     grid-area: 2/3/3/4;
 }
 
-.gridelement4{
-    grid-area: 2/4/3/5;
-}
-
 .gridelement5{
     grid-area: 3/1/4/2;
 }
@@ -88,10 +97,6 @@ html,body{
 
 .gridelement7{
     grid-area: 3/3/4/4;
-}
-
-.gridelement8{
-    grid-area: 3/4/4/5;
 }
 
 .gridelement9{
@@ -106,10 +111,6 @@ html,body{
     grid-area: 4/3/5/4;
 }
 
-.gridelement14{
-    grid-area: 4/4/5/5;
-}
-
 .gridelement18{
     grid-area: 5/1/6/2;
 }
@@ -122,22 +123,6 @@ html,body{
     grid-area: 5/3/6/4;
 }
 
-.gridelement15{
-    grid-area: 5/4/6/5;
-}
-
-.gridelement13{
-    grid-area: 6/1/7/2;
-}
-
-.gridelement12{
-    grid-area: 6/3/7/5;
-}
-
-.gridelement19{
-    grid-area: 6/2/7/3;
-}
-
 .element{
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
@@ -145,7 +130,7 @@ html,body{
     border-radius: 1rem;
     border-width: 1.5px;
     text-align: center;
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(176, 176, 176);
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .element:hover{
@@ -159,6 +144,41 @@ html,body{
     border-radius: 1rem;
     border-width: 1.5px;
     text-align: center;
+}
+
+.gridelement12{
+    grid-area: 6/3/7/5;
+    background-color: rgb(195, 255, 195);
+}
+
+.gridelement13{
+    grid-area: 6/1/7/2;
+    background-color: rgb(247, 128, 128);
+}
+
+.gridelement19{
+    grid-area: 6/2/7/3;
+    background-color: rgb(247, 128, 128);
+}
+
+.gridelement4{
+    grid-area: 2/4/3/5;
+    background-color: rgb(139, 166, 254);
+}
+
+.gridelement8{
+    grid-area: 3/4/4/5;
+    background-color: rgb(139, 166, 254);
+}
+
+.gridelement14{
+    grid-area: 4/4/5/5;
+    background-color: rgb(139, 166, 254);
+}
+
+.gridelement15{
+    grid-area: 5/4/6/5;
+    background-color: rgb(139, 166, 254);
 }
 
 .aboutText{
